@@ -47,7 +47,7 @@ Performed deep dive analysis using SQL:
 
 
 **🔽 Bike Purchases by Age Group**  
-![Bike Purchases by Region](Bike_Purchase_Analysis/Images/Bike_purchase_by_age_group.png)
+![Bike Purchases by Region](Bike_Purchase_Analysis/Images/Bike_purcahse_by_age_group.png)
 
 **🔽 Bike Purchase by Gender-wise Income**  
 ![Age Group and Gender-wise Income](Bike_Purchase_Analysis/Images/Income_by_Gender.png)
