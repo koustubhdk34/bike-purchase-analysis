@@ -67,7 +67,7 @@ An interactive Excel dashboard was created using Pivot Tables, Charts, and Slice
 > Charts such as clustered bar, line chart, were used to communicate findings visually.
 
 **📊 Dashboard Preview:**  
-![Excel Dashboard](Bike_Purchase_Analysis/Dashboard/Dashboard.png)
+![Excel Dashboard](Bike_Purchase_Analysis/Dashboard/Dashaboard.png)
 
 ---
 
