@@ -42,11 +42,15 @@ Performed deep dive analysis using SQL:
 
 > SQL aggregation functions (`COUNT`, `AVG`, `GROUP BY`, `CASE WHEN`) and filtering (`WHERE`, `HAVING`) were used to derive insights.
 
-**🔽 Visual: Bike Purchases by Commute Distance**  
-![Commute Distance Purchase](Images/Layoffs_by_countries.png)
+ 
+## 📊 Visualizations
 
-**🔽 Visual: Purchase by Region**  
-![Purchase by Region](Images/Affected_industries.png)
+
+**🔽 Bike Purchases by Age Group**  
+![Bike Purchases by Region](Bike_Purchase_Analysis/Images/Bike_purchase_by_age_group.png)
+
+**🔽 Bike Purchase by Gender-wise Income**  
+![Age Group and Gender-wise Income](Bike_Purchase_Analysis/Images/Income_by_Gender.png)
 
 ---
 
@@ -63,7 +67,7 @@ An interactive Excel dashboard was created using Pivot Tables, Charts, and Slice
 > Charts such as clustered bar, line chart, were used to communicate findings visually.
 
 **📊 Dashboard Preview:**  
-![Excel Dashboard](Images/Layoffs_by_Company.png)
+![Excel Dashboard](Bike_Purchase_Analysis/Dashboard/Dashboard.png)
 
 ---
 
@@ -72,18 +76,18 @@ An interactive Excel dashboard was created using Pivot Tables, Charts, and Slice
 ```sql
 -- Gender-wise bike purchase count
 SELECT Gender, COUNT(*) AS Total_Buyers
-FROM customers
+FROM customer_data
 WHERE Purchased_Bike = 'Yes'
 GROUP BY Gender;
 
 -- Average income of buyers vs non-buyers
 SELECT Purchased_Bike, ROUND(AVG(Income), 2) AS Avg_Income
-FROM customers
+FROM customer_data
 GROUP BY Purchased_Bike;
 
 -- Bike purchase by commute distance
 SELECT Commute_Distance, COUNT(*) AS Purchases
-FROM customers
+FROM customer_data
 WHERE Purchased_Bike = 'Yes'
 GROUP BY Commute_Distance
 ORDER BY Purchases DESC;
